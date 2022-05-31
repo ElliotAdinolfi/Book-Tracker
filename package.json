@@ -1,0 +1,66 @@
+{
+  "name": "solo-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server/server.js",
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open --hot --progress --color \" \"nodemon server/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElliotAdinolfi/Book-Tracker.git"
+  },
+  "author": "Elliot-Adinolfi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElliotAdinolfi/Book-Tracker/issues"
+  },
+  "homepage": "https://github.com/ElliotAdinolfi/Book-Tracker#readme",
+  "nodemonConfig": {
+    "ignore": [
+      "build",
+      "client"
+    ]
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "browserify": "^17.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "npm": "^8.10.0",
+    "pg": "^8.7.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.2",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0",
+    "redux-starter-kit": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.17.12",
+    "babel-loader": "^8.2.5",
+    "concurrently": "^7.2.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.16.0",
+    "eslint-plugin-react": "^7.30.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "isomorphic-fetch": "^3.0.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16",
+    "redux-devtools-extension": "^2.13.9",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}
